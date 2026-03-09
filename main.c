@@ -15,13 +15,17 @@ int main(int argc, char** argv) {
     printf("addr y : %p\n", (void*)&y);
     printf("addr z : %p\n", (void*)&z);
     printf("addr a : %p\n", (void*)&a);
-    # endif
 
     int b = 100;
     int c = 200;
     int *p = NULL;
     check_point(b, c, p);
+    # endif
 
+    task1();
+    task2();
+    task3();
+    task4();
 
     return 0;
 }

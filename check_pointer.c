@@ -27,3 +27,4 @@ void check_point(int b, int c, int *p) {
     printf(" int p is %d(%dbyte) and %d's address is 0x%x\n", *p, sizeof(int),p, &p);
     printf("b = %d, c = %d, *p = %d\n, p = %d\n", b, c, *p, p);
 }
+
