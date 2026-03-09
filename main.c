@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int main(int argc, char** argv) {
+    # if 0
     int  x = 100;
     int x1 = 201;
     double y = 100.1;
@@ -14,6 +15,12 @@ int main(int argc, char** argv) {
     printf("addr y : %p\n", (void*)&y);
     printf("addr z : %p\n", (void*)&z);
     printf("addr a : %p\n", (void*)&a);
+    # endif
+
+    int b = 100;
+    int c = 200;
+    int *p = NULL;
+    check_point(b, c, p);
 
 
     return 0;
