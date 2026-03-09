@@ -65,3 +65,21 @@ void task4() {
     //	メモリの開放
     free(a);
 }
+
+void check_pointer_again() {
+    int u = 100;
+    int w = 250;
+    int *p;
+    int *q;
+
+    p = &u;
+    q = &w;
+    printf("pointer of %d(u) is %p\n", u, (void*)&u);
+    printf("pointer of %d(w) is %p\n", w, (void*)&w);
+
+    printf("pointer of %d(p) is %p\n", p, (void*)&p);
+    printf("pointer of %d(q) is %p\n", q, (void*)&q);
+
+    printf("pointer of %d(*p) is %p\n", *p, (void*)&*p);
+    printf("pointer of %d(*q) is %p\n", *q, (void*)&*q);
+}

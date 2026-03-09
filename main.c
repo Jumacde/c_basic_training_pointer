@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(int argc, char** argv) {
-    # if 0
+    //# if 0
     int  x = 100;
     int x1 = 201;
     double y = 100.1;
@@ -20,12 +20,13 @@ int main(int argc, char** argv) {
     int c = 200;
     int *p = NULL;
     check_point(b, c, p);
-    # endif
+    //# endif
 
     task1();
     task2();
     task3();
     task4();
+    check_pointer_again();
 
     return 0;
 }
