@@ -4,12 +4,12 @@
 
 void check_point(int b, int c, int *p) {
     p = &b; // address of a is in p.
-    printf("%p\n", (void*)p);
+    printf("case1 p = &b: %p\n", (void*)p);
     *p = 300;
-    printf("%d\n", *p);
+    printf("case2 *p = 300: %d\n", *p);
     p = &c;
-    printf("%p\n", (void*)p);
+    printf("case 3 p = &c: %p\n", (void*)p);
     *p = 400;
-    printf("%d\n", *p);
+    printf("case 4 *p = 400: %d\n", *p);
     printf("b = %d, c = %d, *p = %d\n", b, c, *p);
 }
